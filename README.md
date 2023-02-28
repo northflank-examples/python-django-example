@@ -28,7 +28,7 @@ You can now clone your repository locally and start making changes. Push your ch
     pip install -r requirements.txt
     ```
 
-    Make sure you are using Python 3.4 or above.
+    Make sure you are using Python 3.11 or above.
 
 1.  **Start developing.**
 
