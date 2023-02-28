@@ -25,8 +25,12 @@ SECRET_KEY = 'django-insecure-5t($#7g@lyui749g3+&40*f)j+(iqbapy4s5y^uef5owt*-h&*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# Use the Northflank environment variable 'NF_HOSTS' to set ALLOWED_HOSTS, if it exists
 
+if "NF_HOSTS" in os.environ:
+    ALLOWED_HOSTS = os.getenv("NF_HOSTS").split(",")
+else:
+    ALLOWED_HOSTS = []
 
 # Application definition
 
