@@ -14,6 +14,10 @@ You can now clone your repository locally and start making changes. Push your ch
 
 [Learn more about using Northflank](https://northflank.com/docs/).
 
+#### Authorizing hosts
+
+This application has been configured to [authorize hosts](https://docs.djangoproject.com/en/4.1/ref/settings/#allowed-hosts) passed via the environment variable `NF_HOSTS`. You can change this, if necessary, by manually setting the environment variable or changing `ALLOWED_HOSTS` in the Ruby environments in `example/settings.py`.
+
 ### Live demo
 [https://example--python-django--examples--nort-kcwl.code.run](https://example--python-django--examples--nort-kcwl.code.run)
 
@@ -28,7 +32,7 @@ You can now clone your repository locally and start making changes. Push your ch
     pip install -r requirements.txt
     ```
 
-    Make sure you are using Python 3.4 or above.
+    Make sure you are using Python 3.11 or above.
 
 1.  **Start developing.**
 
